@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[19]:
+# In[3]:
 
 
 import os
@@ -47,12 +47,12 @@ with open(csvpath, newline='') as csvfile:
     
 #Greatest Increase
     profit_increase = max(revenue_diff)
-    k = revenue_change.index(profit_increase)
+    k = revenue_diff.index(profit_increase)
     month_increase = month[k+1]
     
 #Greatest Decrease
     profit_decrease = min(revenue_diff)
-    j = revenue_change.index(profit_decrease)
+    j = revenue_diff.index(profit_decrease)
     month_decrease = month[j+1]
 
 
@@ -71,24 +71,6 @@ print("Average change  : $" + str(monthly_change))
 print(f"Greatest Increase in Profits: {month_increase} (${profit_increase})")
 
 print(f"Greatest Decrease in Profits: {month_decrease} (${profit_decrease})")
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
 
 # In[ ]:
